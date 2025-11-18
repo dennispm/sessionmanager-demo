@@ -3,6 +3,8 @@
 **/*.ipr
 **/*.iws
 .idea
+.mvn
+.DS_Store
 out/
 .gradle
 gradlew.bat
