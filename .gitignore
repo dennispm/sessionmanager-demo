@@ -1,0 +1,15 @@
+**/target/*
+**/*.iml
+**/*.ipr
+**/*.iws
+.idea
+out/
+.gradle
+gradlew.bat
+build/
+gradle-app.setting
+!gradle-wrapper.jar
+logs/
+dist/
+**/.ideaDataSources/*
+/dataSources
