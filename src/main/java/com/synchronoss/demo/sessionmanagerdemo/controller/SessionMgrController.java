@@ -1,7 +1,6 @@
 package com.synchronoss.demo.sessionmanagerdemo.controller;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.web.servlet.server.Session;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -104,7 +103,7 @@ public class SessionMgrController {
         responseHeaders.add("Access-Control-Allow-Credentials","true");
         responseHeaders.add(HttpHeaders.LOCATION, pwaCallbackUrl);
         responseHeaders.add("X-CSRF-TOKEN", "test-csrf-token");
-        return new ResponseEntity<String>(responseHeaders, HttpStatus.MOVED_TEMPORARILY);
+        return new ResponseEntity<String>(responseHeaders, HttpStatus.FOUND);
     }
 
     //clear the cookies for logout
